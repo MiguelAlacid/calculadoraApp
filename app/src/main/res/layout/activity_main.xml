@@ -4,53 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#14FFC8"
+    android:backgroundTint="#41D3FF"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="212dp"
+    <ImageButton
+        android:id="@+id/btnSumar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="64dp"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblCalculadora">
+        app:layout_constraintTop_toBottomOf="@+id/lblCalculadora"
+        app:srcCompat="@drawable/additionthicksymbol" />
 
-        <Button
-            android:id="@+id/btnSumar"
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:text="SUMAR" />
+    <ImageButton
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRestar"
+        app:srcCompat="@drawable/cancel" />
 
-        <Button
-            android:id="@+id/btnRestar"
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:text="RESTAR"
-            tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="560dp" />
+    <ImageButton
+        android:id="@+id/btnDividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiplicar"
+        app:srcCompat="@drawable/division" />
 
-        <Button
-            android:id="@+id/btnMultiplicar"
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:text="MULTIPLICAR" />
-
-        <Button
-            android:id="@+id/btnDividir"
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:text="DIVIDIR" />
-
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btnRestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSumar"
+        app:srcCompat="@drawable/remove" />
 
     <TextView
         android:id="@+id/lblCalculadora"
         android:layout_width="301dp"
         android:layout_height="105dp"
         android:layout_marginTop="76dp"
+        android:foregroundTint="#810BCA"
         android:text="CALCULADORA SIMPLE"
         android:textAlignment="center"
+        android:textColor="#9447FF"
+        android:textColorLink="#EF3333"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnDividir).setOnClickListener(v->{
             Intent Ventana = new Intent(MainActivity.this, Division.class);
             startActivity(Ventana);
+
         });
     }
 }
